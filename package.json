@@ -1,0 +1,29 @@
+{
+  "name": "yarn-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "yarn@4.5.0",
+  "scripts": {
+    "clean": "yarn workspaces foreach --all run clean && del ./node_modules/.cache",
+    "clean:deps": "yarn workspaces foreach --all -pt run clean:deps && del node_modules",
+    "first-app": "yarn workspace first-app",
+    "components": "yarn workspace @yarn/components",
+    "utils": "yarn workspace @yarn/utils"
+  },
+  "devDependencies": {
+    "del-cli": "^5.1.0",
+    "typescript": "^5.6.2"
+  },
+  "workspaces": [
+    "apps/*",
+    "libs/*"
+  ],
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": "please-use-yarn",
+    "yarn": ">=4.0.2"
+  },
+  "dependencies": {
+    "create-next-app": "^14.2.13"
+  }
+}
