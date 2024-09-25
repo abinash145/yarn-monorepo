@@ -1239,15 +1239,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"create-next-app@npm:^14.2.13":
-  version: 14.2.13
-  resolution: "create-next-app@npm:14.2.13"
-  bin:
-    create-next-app: dist/index.js
-  checksum: 10c0/820c66cf706069208d1bb80b478386e81c1128b8fc53b0ff9500ca4ca27acd2e1075f03088199075c0c89d252347a1f08bbf8a724ea3ca92fb8a7da1e6797824
-  languageName: node
-  linkType: hard
-
 "cross-spawn@npm:^7.0.0, cross-spawn@npm:^7.0.2":
   version: 7.0.3
   resolution: "cross-spawn@npm:7.0.3"
@@ -4928,7 +4919,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "yarn-monorepo@workspace:."
   dependencies:
-    create-next-app: "npm:^14.2.13"
     del-cli: "npm:^5.1.0"
     typescript: "npm:^5.6.2"
   languageName: unknown
